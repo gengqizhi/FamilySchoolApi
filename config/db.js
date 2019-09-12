@@ -1,13 +1,13 @@
 // https://www.jianshu.com/p/3e35db2c8d6c
 const Sequelize = require('sequelize');
-const sequelize = new Sequelize('FamilySchool','root','',{
-  host:'localhost',
+const sequelize = new Sequelize('familySchool','root','redhat',{
+  host:'192.168.2.161',// 本机ip
   dialect:'mysql',
   operatorsAliases:false,
   dialectOptions:{
     //字符集
-    charset:'utf8mb4',
-    collate:'utf8mb4_unicode_ci',
+    charset:'utf8',
+    collate:'utf8_general_ci',
     supportBigNumbers: true,
     bigNumberStrings: true
   },
